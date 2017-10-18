@@ -75,7 +75,7 @@ body, html {
     <a href="#home" class="w3-bar-item w3-button">Home</a>
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> About</a>
     <a href="#projects" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Projects</a>
-    <a href="/blog" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-book"></i> Blog</a>
+    <a href="/writings" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-book"></i> Blog</a>
 
     <a href="https://github.com/shamikh-mill" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
       <i class="fa fa-github"></i>
@@ -183,7 +183,7 @@ body, html {
       <h3><a href="https://www.youtube.com/user/computerpowerguide">YouTube Video Tutorials</a> </h3>
       <p style="font-size:16px;">Maintained YouTube channel of HD tutorials on computer software and graphic design, accumulated 185,000+ video views over the years.</p>
     </div>
-    <a href="/blog/projects" class="button">See More</a>
+    <a href="/writings/projects" class="button">See More</a>
 
 
   </div>
@@ -209,53 +209,7 @@ body, html {
 
 
  
-<!-- Add Google Maps -->
-<script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
 
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
-    }
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
 
 </body>
 </html>
