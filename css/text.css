@@ -1,12 +1,27 @@
-#blurb {
-  font-size:.8em;
+#name {
+  font-size:1em;
+  letter-spacing: 3px;
   padding-top: 1px;
   padding-right: 10px;
   padding-bottom: 1px;
   padding-left: 10px;
   background-color: black;
-  line-height: 1.1em;
+  line-height: 1.2em;
+  text-align: center; 
+  color: white;
+  font-family: 'Lora', serif;
+
+}
+#blurb {
+  font-size:.7em;
+  padding-top: 1px;
+  padding-right: 10px;
+  padding-bottom: 1px;
+  padding-left: 10px;
+  background-color: black;
+  line-height: 1.2em;
   text-align: left; 
   color: white;
+  font-family: 'Lora', serif;
 
 }
